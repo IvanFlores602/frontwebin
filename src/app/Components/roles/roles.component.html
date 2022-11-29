@@ -1,0 +1,12 @@
+<div class="cardo">
+    <div class="row">
+    <div class="col-sm-8" *ngFor="let usuario of usuarios">
+     <div class="card" id="cards" style="width: 100%;" >
+         <h2>{{usuario.nombre}} {{usuario.apellidos}} rol: {{usuario.rol}}</h2>
+         <button id="buton" (click)="modificarUsuario(usuario)" class="btn btn-outline-danger" type="submit">acender</button>
+     </div>
+       <br><br>
+    </div> 
+ </div>
+</div>
+
