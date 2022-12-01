@@ -12,6 +12,8 @@ import { ConfirmarComponent } from './Components/confirmar/confirmar.component';
 
 import { FormsModule } from '@angular/forms';
 import { RolesComponent } from './Components/roles/roles.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { CartComponent } from './Components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { RolesComponent } from './Components/roles/roles.component';
     LoginComponent,
     SiginComponent,
     ConfirmarComponent,
-    RolesComponent
+    RolesComponent,
+    FilterPipe,
+    CartComponent
   ],
   imports: [
     BrowserModule,
