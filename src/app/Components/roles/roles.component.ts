@@ -34,9 +34,9 @@ export class RolesComponent implements OnInit {
    this.rol = localStorage.getItem('rol');
 
     if(this.rol == '3'){
-      this.router.navigate(['/roles']);
+      
     }else{
-      this.router.navigate(['/roles']);
+      //this.router.navigate(['/']);
     }
   }
 

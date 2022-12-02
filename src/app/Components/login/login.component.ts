@@ -40,6 +40,7 @@ export class LoginComponent implements OnInit {
           console.log("si")
           localStorage.setItem('log', 'true');
           this.auth = localStorage.getItem('log');
+          localStorage.setItem('rol', this.usuarios[x].rol)
           console.log(this.auth)
           location.reload();
           Swal.fire({
