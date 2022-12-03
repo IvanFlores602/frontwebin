@@ -46,10 +46,17 @@
       </div>
     </div>
   </div>
+  <div *ngIf="rol != '2'">
+    <h1>Logueado como supervisor losiento pero</h1>
+    <h4>Logeate como Admin :) para que puedas modificar a usuarios</h4>
+    <button class="btn btn-warning"  [routerLink]="['/login']"> si </button>
+  </div>
   
   <div *ngIf="rol != '3'">
     <h1>Necesitas ser administrador</h1>
     <h4>Logeate como Admin :)</h4>
+    <button class="btn btn-warning" [routerLink]="['/login']"> si </button>
+    
   </div>
   
   <div class="barralat" *ngIf="newvista == true">

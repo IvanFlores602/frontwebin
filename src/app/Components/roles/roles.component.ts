@@ -39,6 +39,19 @@ export class RolesComponent implements OnInit {
       //this.router.navigate(['/']);
     }
   }
+  
+  salir() {
+    localStorage.setItem('log', 'false');
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'cerraste secion',
+      showConfirmButton: false,
+      timer: 1500
+    })
+    location.reload();
+ 
+  }
 
   obtenerUsuarios() {
     
