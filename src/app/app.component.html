@@ -9,22 +9,22 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a  class="nav-link active" aria-current="page" [routerLink]="['/login']">iniciar sesión</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/login']">Logear</a>
           </li>
           <li class="nav-item">
-            <a *ngIf="auth == 'false'" class="nav-link active" aria-current="page" [routerLink]="['/sigin']">Registra cuenta</a>
+            <a *ngIf="auth == 'false'" class="nav-link active" aria-current="page" [routerLink]="['/sigin']">Registrar</a>
           </li>
           <li class="nav-item">
             <a *ngIf="auth == 'true'" class="nav-link active" aria-current="page" href="/articulos">Articulos</a>
           </li>
           <li class="nav-item">
-            <a *ngIf="auth == 'true'" class="nav-link active" aria-current="page" href="/roles">Administrar</a>
+            <a *ngIf="auth == 'true'" class="nav-link active" aria-current="page" href="/roles">Roles</a>
           </li>
           <div class="form-group">
             <input *ngIf="auth == 'true'" type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
         </div>
         
-          <button *ngIf="auth == 'true'" routerLink="cart" class="btn btn-primary">
+          <button routerLink="cart" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
               <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
             </svg>
