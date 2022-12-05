@@ -5,7 +5,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 })
 export class UsuariosService {
 
-  url = 'https://back-ivan12590.herokuapp.com/';
+  url = 'https://back-ivan12590.herokuapp.com';
 
   constructor(private http: HttpClient) {}
 
