@@ -9,10 +9,10 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a *ngIf="auth == 'false'"  class="nav-link active" aria-current="page" [routerLink]="['/login']">iniciar sesión</a>
+            <a   class="nav-link active" aria-current="page" [routerLink]="['/login']">iniciar sesión</a>
           </li>
           <li class="nav-item">
-            <a *ngIf="auth == 'false'" class="nav-link active" aria-current="page" [routerLink]="['/sigin']">Registra cuenta</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/sigin']">Registra cuenta</a>
           </li>
           <li class="nav-item">
             <a *ngIf="auth == 'true'" class="nav-link active" aria-current="page" href="/articulos">Articulos</a>
